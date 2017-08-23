@@ -1,0 +1,4 @@
+﻿카드구분     : #CARD_PAY
+#CARD_NO
+유효기간     : #EXP_MY
+승인번호     : #APPR_NO

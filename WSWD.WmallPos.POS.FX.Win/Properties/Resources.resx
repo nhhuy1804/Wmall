@@ -1,0 +1,388 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btn_cal_01_DN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_cal_01_DN.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_cal_03" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_cal_03.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MessageDialog_Button_OK" xml:space="preserve">
+    <value>확인</value>
+  </data>
+  <data name="btn_cal_10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_cal_10.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_cal_11_DN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_cal_11_DN.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_cal_08_DN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_cal_08_DN.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="msgdialog_bg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\msgdialog_bg.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_cal_07" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_cal_07.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="server_state_disc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\server_state_disc.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_cal_13_DN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_cal_13_DN.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_cal_02_DN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_cal_02_DN.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_cal_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_cal_01.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KeyBoard_OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj0yLjAuMC4w
+        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACFTeXN0
+        ZW0uV2luZG93cy5Gb3Jtcy5BeEhvc3QrU3RhdGUBAAAABERhdGEHAgIAAAAJAwAAAA8DAAAAXQAAAAIB
+        AAAAAQAAAAAAAAAAAAAAAEgAAACTsgAASAAAAAMACAAL8ldHIAAAAF8AZQB4AHQAZQBuAHQAeABPAwAA
+        AwAIAAryV0fg////XwBlAHgAdABlAG4AdAB5AE8DAAAL
+</value>
+  </data>
+  <data name="btn_cal_04" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_cal_04.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_cal_17_DN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_cal_17_DN.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_cal_13" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_cal_13.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_cal_16_DN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_cal_16_DN.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_cal_15" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_cal_15.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_cal_12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_cal_12.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wmall_logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\wmall_logo.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bg_03" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bg_03.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ico_error" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ico_error.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MessageDialog_Title_Information" xml:space="preserve">
+    <value>정보</value>
+  </data>
+  <data name="btn_cal_03_DN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_cal_03_DN.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_cal_15_DN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_cal_15_DN.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_cal_20_DN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_cal_20_DN.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_cal_14" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_cal_14.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_cal_07_DN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_cal_07_DN.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_cal_12_DN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_cal_12_DN.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="server_state_conn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\server_state_conn.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="check_box_ON" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\check_box_ON.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_cal_04_DN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_cal_04_DN.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MessageDialog_Title_Question" xml:space="preserve">
+    <value>확인</value>
+  </data>
+  <data name="check_box_OFF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\check_box_OFF.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bullet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bullet.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_cal_05_DN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_cal_05_DN.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MessageDialog_Title_Error" xml:space="preserve">
+    <value>오류</value>
+  </data>
+  <data name="MessageDialog_Title_YesNoCancel" xml:space="preserve">
+    <value>확인</value>
+  </data>
+  <data name="btn_cal_02" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_cal_02.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_cal_10_DN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_cal_10_DN.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ico_ok" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ico_ok.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_cal_09_DN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_cal_09_DN.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_cal_19" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_cal_19.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_cal_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_cal_16.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_cal_18" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_cal_18.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_cal_21_DN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_cal_21_DN.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_cal_18_DN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_cal_18_DN.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_cal_14_DN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_cal_14_DN.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_cal_11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_cal_11.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ico_list_up_P" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ico_list_up_P.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ico_list_up" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ico_list_up.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_cal_08" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_cal_08.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="notice_state_norm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\notice_state_norm.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="loading" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\loading.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MessageDialog_Button_Yes" xml:space="preserve">
+    <value>예</value>
+  </data>
+  <data name="btn_cal_17" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_cal_17.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_cal_06_DN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_cal_06_DN.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MessageDialog_Button_No" xml:space="preserve">
+    <value>아니오</value>
+  </data>
+  <data name="notice_state_new" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\notice_state_new.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_cal_19_DN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_cal_19_DN.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_cal_20" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_cal_20.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_cal_06" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_cal_06.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ico_list_dn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ico_list_dn.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TopBar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TopBar.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ico_list_dn_P" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ico_list_dn_P.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MessageDialog_Title_Warning" xml:space="preserve">
+    <value>경고</value>
+  </data>
+  <data name="framebase" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\framebase.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_cal_09" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_cal_09.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MessageDialog_Button_Cancel" xml:space="preserve">
+    <value>닫기</value>
+  </data>
+  <data name="btn_cal_05" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_cal_05.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_cal_21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_cal_21.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="img_loading" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\img_loading.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="messagedialog_error" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\messagedialog_error.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="messagedialog_information" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\messagedialog_information.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="messagedialog_question" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\messagedialog_question.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="messagedialog_warning" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\messagedialog_warning.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="framebase_refund" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\framebase_refund.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_main_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_main_01.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_main_01_DA" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_main_01_da.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_main_01_DN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_main_01_dn.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_main_02" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_main_02.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_main_02_DA" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_main_02_da.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_main_02_DN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_main_02_dn.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bg_02_f" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bg_02_f.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bg_031" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bg_03.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wmall_logo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wmall_logo.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_cal_201" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_cal_20.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>

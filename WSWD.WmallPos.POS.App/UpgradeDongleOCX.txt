@@ -1,0 +1,8 @@
+﻿1) Goto admin console
+2) Libraries folder
+- run un_reg_ocx.bat
+3) Goto POS debug folder, lib \ ocx
+- run un_reg_ocx.bat
+4) Copy new files to POS.App project, folder lib \ ocx
+5) Libraries folder
+- run reg_ocx.bat

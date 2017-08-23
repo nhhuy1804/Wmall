@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DA65BBE1-FF95-4B8F-B0A8-36D3B1DA11C3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WSWD.WmallPos.POS.AppStarter</RootNamespace>
+    <AssemblyName>AppStarter</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>launcher_32.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\02.Deployment\POS\Debug\update\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\02.Deployment\POS\Release\update\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.SQLite">
+      <HintPath>C:\Program Files (x86)\SQLite.NET\bin\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationClient">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\shared\wswd.wmallpos.shared\nini\config\AliasText.cs">
+      <Link>Nini\Config\AliasText.cs</Link>
+    </Compile>
+    <Compile Include="..\..\shared\wswd.wmallpos.shared\nini\config\ArgvConfigSource.cs">
+      <Link>Nini\Config\ArgvConfigSource.cs</Link>
+    </Compile>
+    <Compile Include="..\..\shared\wswd.wmallpos.shared\nini\config\ConfigBase.cs">
+      <Link>Nini\Config\ConfigBase.cs</Link>
+    </Compile>
+    <Compile Include="..\..\shared\wswd.wmallpos.shared\nini\config\ConfigCollection.cs">
+      <Link>Nini\Config\ConfigCollection.cs</Link>
+    </Compile>
+    <Compile Include="..\..\shared\wswd.wmallpos.shared\nini\config\ConfigSourceBase.cs">
+      <Link>Nini\Config\ConfigSourceBase.cs</Link>
+    </Compile>
+    <Compile Include="..\..\shared\wswd.wmallpos.shared\nini\config\DotNetConfigSource.cs">
+      <Link>Nini\Config\DotNetConfigSource.cs</Link>
+    </Compile>
+    <Compile Include="..\..\shared\wswd.wmallpos.shared\nini\config\IConfig.cs">
+      <Link>Nini\Config\IConfig.cs</Link>
+    </Compile>
+    <Compile Include="..\..\shared\wswd.wmallpos.shared\nini\config\IConfigSource.cs">
+      <Link>Nini\Config\IConfigSource.cs</Link>
+    </Compile>
+    <Compile Include="..\..\shared\wswd.wmallpos.shared\nini\config\IniConfig.cs">
+      <Link>Nini\Config\IniConfig.cs</Link>
+    </Compile>
+    <Compile Include="..\..\shared\wswd.wmallpos.shared\nini\config\IniConfigSource.cs">
+      <Link>Nini\Config\IniConfigSource.cs</Link>
+    </Compile>
+    <Compile Include="..\..\shared\wswd.wmallpos.shared\nini\config\RegistryConfigSource.cs">
+      <Link>Nini\Config\RegistryConfigSource.cs</Link>
+    </Compile>
+    <Compile Include="..\..\shared\wswd.wmallpos.shared\nini\config\XmlConfigSource.cs">
+      <Link>Nini\Config\XmlConfigSource.cs</Link>
+    </Compile>
+    <Compile Include="..\..\shared\wswd.wmallpos.shared\nini\ini\IniDocument.cs">
+      <Link>Nini\Ini\IniDocument.cs</Link>
+    </Compile>
+    <Compile Include="..\..\shared\wswd.wmallpos.shared\nini\ini\IniException.cs">
+      <Link>Nini\Ini\IniException.cs</Link>
+    </Compile>
+    <Compile Include="..\..\shared\wswd.wmallpos.shared\nini\ini\IniItem.cs">
+      <Link>Nini\Ini\IniItem.cs</Link>
+    </Compile>
+    <Compile Include="..\..\shared\wswd.wmallpos.shared\nini\ini\IniReader.cs">
+      <Link>Nini\Ini\IniReader.cs</Link>
+    </Compile>
+    <Compile Include="..\..\shared\wswd.wmallpos.shared\nini\ini\IniSection.cs">
+      <Link>Nini\Ini\IniSection.cs</Link>
+    </Compile>
+    <Compile Include="..\..\shared\wswd.wmallpos.shared\nini\ini\IniSectionCollection.cs">
+      <Link>Nini\Ini\IniSectionCollection.cs</Link>
+    </Compile>
+    <Compile Include="..\..\shared\wswd.wmallpos.shared\nini\ini\IniWriter.cs">
+      <Link>Nini\Ini\IniWriter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\shared\wswd.wmallpos.shared\nini\util\ArgvParser.cs">
+      <Link>Nini\Util\ArgvParser.cs</Link>
+    </Compile>
+    <Compile Include="..\..\shared\wswd.wmallpos.shared\nini\util\OrderedList.cs">
+      <Link>Nini\Util\OrderedList.cs</Link>
+    </Compile>
+    <Compile Include="..\..\shared\wswd.wmallpos.shared\nini\util\OrderedListEnumerator.cs">
+      <Link>Nini\Util\OrderedListEnumerator.cs</Link>
+    </Compile>
+    <Compile Include="Controls\ColorProgressBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ColorProgressBar.designer.cs">
+      <DependentUpon>ColorProgressBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NativeMethods.cs" />
+    <Compile Include="Net\NetTypes.cs" />
+    <Compile Include="Net\POSFtpClient.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="UpdateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateForm.Designer.cs">
+      <DependentUpon>UpdateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Controls\ColorProgressBar.resx">
+      <DependentUpon>ColorProgressBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateForm.resx">
+      <DependentUpon>UpdateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wmall_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="launcher_32.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

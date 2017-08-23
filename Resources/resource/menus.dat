@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<menu type="Menu">
+  <menu name="1. 판 매 관 리" type="Program" url="WSWD.WmallPos.POS.SL.dll" class="WSWD.WmallPos.POS.SL.VC.POS_SL_M001" />
+  <menu name="2. 입 출 금 관 리" type="Menu" key="MNU_IO">
+    <menu name="21 .준 비 금" type="Program" url="WSWD.WmallPos.POS.IO.dll" class="WSWD.WmallPos.POS.IO.VC.POS_IO_M001" />
+    <menu name="22. 중 간 입 금" type="Program" url="WSWD.WmallPos.POS.IO.dll" class="WSWD.WmallPos.POS.IO.VC.POS_IO_M002" />
+    <menu name="23. 마 감 입 금" type="Program" url="WSWD.WmallPos.POS.IO.dll" class="WSWD.WmallPos.POS.IO.VC.POS_IO_M003" />
+    <menu name=" 이 전 메 뉴" type="MenuCommand" url="" class="PreviousMenu" />
+  </menu>
+  <menu name="3. 일 반 점 검" type="Menu" key="MNU_CHECK">
+    <menu name="31. 품번별 매출 조회" type="Program" url="WSWD.WmallPos.POS.IQ.dll" class="WSWD.WmallPos.POS.IQ.VC.POS_IQ_P001" />
+    <menu name="32. 카드사별 매출 조회" type="Program" url="WSWD.WmallPos.POS.IQ.dll" class="WSWD.WmallPos.POS.IQ.VC.POS_IQ_P002" />
+    <menu name="33. 수표 조회" type="Program" url="WSWD.WmallPos.POS.IQ.dll" class="WSWD.WmallPos.POS.IQ.VC.POS_IQ_P003" />
+    <menu name="34. 영수증 조회" type="Program" url="WSWD.WmallPos.POS.IQ.dll" class="WSWD.WmallPos.POS.IQ.VC.POS_IQ_P004" />
+    <menu name=" 이 전 메 뉴" type="MenuCommand" url="" class="PreviousMenu" />
+  </menu>
+  <menu name="4. 마 감 관 리" type="Menu" key="MNU_CLOSE">
+    <menu name="41. POS합계점검" type="Program" url="WSWD.WmallPos.POS.ED.dll" class="WSWD.WmallPos.POS.ED.VC.POS_ED_P001" />
+    <menu name="42. 계산원 정산" type="Program" url="WSWD.WmallPos.POS.ED.dll" class="WSWD.WmallPos.POS.ED.VC.POS_ED_P002" />
+    <menu name="43. POS 정산" type="Program" url="WSWD.WmallPos.POS.ED.dll" class="WSWD.WmallPos.POS.ED.VC.POS_ED_P003" validator="WSWD.WmallPos.POS.ED.PT.EDEODValidator" />
+    <menu name="44. DATA 송신" type="Program" url="WSWD.WmallPos.POS.ED.dll" class="WSWD.WmallPos.POS.ED.VC.POS_ED_P004" />
+    <menu name="45. 마스터 수신" type="Program" url="WSWD.WmallPos.POS.ED.dll" class="WSWD.WmallPos.POS.ED.VC.POS_ED_P005"/>
+    <menu name=" 이 전 메 뉴" type="MenuCommand" url="" class="PreviousMenu" />
+  </menu>
+  <menu name="5. 시 스 템 관 리" type="Menu" key="MNU_SYSTEM" role="ADMIN">
+    <menu name="51. POS 운영설정" type="Program" url="WSWD.WmallPos.POS.SY.dll" class="WSWD.WmallPos.POS.SY.VC.POS_SY_P001" />
+    <menu name="52. POS 장비설정" type="Program" url="WSWD.WmallPos.POS.SY.dll" class="WSWD.WmallPos.POS.SY.VC.POS_SY_P002" />
+    <menu name=" 이 전 메 뉴" type="MenuCommand" url="" class="PreviousMenu" />
+  </menu>
+  <menu name="1. 시 스 템 관 리" type="Menu" key="MNU_CONFIG" visible="False">
+    <menu name="1. POS 운영설정" type="Program" url="WSWD.WmallPos.POS.SY.dll" class="WSWD.WmallPos.POS.SY.VC.POS_SY_P001" />
+    <menu name="2. POS 장비설정" type="Program" url="WSWD.WmallPos.POS.SY.dll" class="WSWD.WmallPos.POS.SY.VC.POS_SY_P002" />
+    <menu name="3. 마스터 수신" type="Program" url="WSWD.WmallPos.POS.ED.dll" class="WSWD.WmallPos.POS.ED.VC.POS_ED_P005"/>
+    <menu name="      프로그램 종료" type="MenuCommand" url="" class="ProgramEnd" />
+  </menu>
+  <menu name="6. 종 료" type="Menu" key="MNU_POS" role="ADMIN">
+    <menu name="61. 프로그램 재시작" type="MenuCommand" url="" class="ProgramRestart" />
+    <menu name="62. 프로그램 종료" type="MenuCommand" url="" class="ProgramEnd" />
+    <menu name="63. POS 재시작" type="MenuCommand" url="" class="POSRestart" />
+    <menu name="64. POS 종료" type="MenuCommand" url="" class="POSEnd" />
+    <menu name=" 이 전 메 뉴" type="MenuCommand" url="" class="PreviousMenu" />
+  </menu>
+</menu>

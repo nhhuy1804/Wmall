@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<setup>
+  <ip>124.137.10.25</ip>
+  <!--<ip>192.168.2.52</ip>-->
+  <port>21</port>
+  <id>pos</id>
+  <pass>wmalldev1!</pass>
+  <serverroot>/upgrade</serverroot>
+  <localroot>TempFile</localroot>
+  <!--<db_ip>192.168.2.51</db_ip>-->
+  <db_ip>124.137.10.26</db_ip>
+  <db_port>1521</db_port>
+  <db_nm>wmalldev</db_nm>
+  <db_id>wmalldev</db_id>
+  <db_pass>wmall#dev</db_pass>
+</setup>

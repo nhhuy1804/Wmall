@@ -1,0 +1,405 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E788AA91-9C0D-420F-A181-DF001DA4ED57}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WSWD.WmallPos.POS.SL</RootNamespace>
+    <AssemblyName>WSWD.WmallPos.POS.SL</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\02.Deployment\POS\Debug\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\02.Deployment\POS\release\bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\..\..\02.Deployment\POS\Debug\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.SQLite, Version=1.0.66.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\SQLite.NET\bin\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controls\GroupItemButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\SalePayItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\SalePayItem.Designer.cs">
+      <DependentUpon>SalePayItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data\SaleSummaryData.cs" />
+    <Compile Include="Data\SLExtensions.cs" />
+    <Compile Include="Data\PBItemData.cs" />
+    <Compile Include="Data\SLP003Data.cs" />
+    <Compile Include="Data\TouchGroupData.cs" />
+    <Compile Include="Data\TouchItemData.cs" />
+    <Compile Include="PI\ISLP003Presenter.cs" />
+    <Compile Include="PI\ISLM001Presenter.cs" />
+    <Compile Include="PI\ISLP004Presenter.cs" />
+    <Compile Include="PI\ISLP002Presenter.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="PT\SLM001Presenter.Trans.cs" />
+    <Compile Include="PT\SLM001Presenter.cs" />
+    <Compile Include="Controls\CurrentItemInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\CurrentItemInfo.Designer.cs">
+      <DependentUpon>CurrentItemInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\FuncKeyGroup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\FuncKeyGroup.Designer.cs">
+      <DependentUpon>FuncKeyGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\GroupItemList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\GroupItemList.Designer.cs">
+      <DependentUpon>GroupItemList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\GuideMessage.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\KeyInputText.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PT\SLP003Presenter.cs" />
+    <Compile Include="PT\SLP004Presenter.cs" />
+    <Compile Include="PT\SLP002Presenter.cs" />
+    <Compile Include="VC\POS_SL_M001.Data.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="VC\POS_SL_M001.Status.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="VC\POS_SL_M001.Consts.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="VC\POS_SL_M001.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="VC\POS_SL_M001.Designer.cs">
+      <DependentUpon>POS_SL_M001.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SaleItemGroup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\SaleItemGroup.Designer.cs">
+      <DependentUpon>SaleItemGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SummaryItemText.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="VC\POS_SL_P003.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VC\POS_SL_P003.Designer.cs">
+      <DependentUpon>POS_SL_P003.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VC\POS_SL_P004.Consts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VC\POS_SL_P004.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VC\POS_SL_P004.Designer.cs">
+      <DependentUpon>POS_SL_P004.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VC\POS_SL_P002.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VC\POS_SL_P002.Designer.cs">
+      <DependentUpon>POS_SL_P002.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VC\POS_SL_P002.Consts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VI\ISLM001BaseView.cs" />
+    <Compile Include="VI\ISLM001SaleView.cs" />
+    <Compile Include="VI\ISLM001TouchGroup.cs" />
+    <Compile Include="VI\ISLM001TouchItem.cs" />
+    <Compile Include="VI\ISLM001HoldView.cs" />
+    <Compile Include="VI\ISLM001TransView.cs" />
+    <Compile Include="VI\ISLP003View.cs" />
+    <Compile Include="VI\ISLP004View.cs" />
+    <Compile Include="VI\ISLP002View.cs" />
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WSWD.WmallPos.POS.BO\WSWD.WmallPos.POS.BO.csproj">
+      <Project>{4133015C-B096-491D-9263-6B226D64823A}</Project>
+      <Name>WSWD.WmallPos.POS.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WSWD.WmallPos.POS.FX.NetComm\WSWD.WmallPos.POS.FX.NetComm.csproj">
+      <Project>{193A326C-1CBD-47D9-9CF1-0DB9EAF05596}</Project>
+      <Name>WSWD.WmallPos.POS.FX.NetComm</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WSWD.WmallPos.POS.FX.Shared\WSWD.WmallPos.POS.FX.Shared.csproj">
+      <Project>{ECD30E8B-C2DC-406F-957E-DB73D9915229}</Project>
+      <Name>WSWD.WmallPos.POS.FX.Shared</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WSWD.WmallPos.POS.FX.Win\WSWD.WmallPos.POS.FX.Win.csproj">
+      <Project>{55373461-D376-4EF1-BB92-50BAFA759FB3}</Project>
+      <Name>WSWD.WmallPos.POS.FX.Win</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WSWD.WmallPos.POS.PY\WSWD.WmallPos.POS.PY.csproj">
+      <Project>{629C9B7C-B604-46B2-9BCD-14178FEACB07}</Project>
+      <Name>WSWD.WmallPos.POS.PY</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\AutoRtnButtons.resx">
+      <DependentUpon>AutoRtnButtons.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\AutoRtnProgress.resx">
+      <DependentUpon>AutoRtnProgress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\AutoRtnTrxnInfo.resx">
+      <DependentUpon>AutoRtnTrxnInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\SalePayItem.resx">
+      <DependentUpon>SalePayItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\SaleSummaryControl.resx">
+      <DependentUpon>SaleSummaryControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CurrentItemInfo.resx">
+      <DependentUpon>CurrentItemInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\FuncKeyGroup.resx">
+      <DependentUpon>FuncKeyGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\GroupItemList.resx">
+      <DependentUpon>GroupItemList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VC\POS_SL_M001.resx">
+      <DependentUpon>POS_SL_M001.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\SaleItemGroup.resx">
+      <DependentUpon>SaleItemGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VC\POS_SL_P003.resx">
+      <DependentUpon>POS_SL_P003.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VC\POS_SL_P004.resx">
+      <DependentUpon>POS_SL_P004.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VC\POS_SL_P002.resx">
+      <DependentUpon>POS_SL_P002.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg_pos_01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg_pos_02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_btnlist01_up_P.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_btnlist01_dn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_btnlist01_dn_P.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_btnlist01_up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_btnlist02_up_P.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_btnlist02_dn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_btnlist02_dn_P.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_btnlist02_up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_cal_up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controls\AutoRtnButtons.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\AutoRtnButtons.Designer.cs">
+      <DependentUpon>AutoRtnButtons.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\AutoRtnPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\AutoRtnPanel.Designer.cs">
+      <DependentUpon>AutoRtnPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\AutoRtnProgress.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\AutoRtnProgress.Designer.cs">
+      <DependentUpon>AutoRtnProgress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\AutoRtnTrxnInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\AutoRtnTrxnInfo.Designer.cs">
+      <DependentUpon>AutoRtnTrxnInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SaleSummaryControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\SaleSummaryControl.Designer.cs">
+      <DependentUpon>SaleSummaryControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PT\SLM001Presenter.Messages.cs" />
+    <Compile Include="PT\SLM001Presenter.Promotion.cs" />
+    <Compile Include="PT\SLM001Presenter.Rtn.cs" />
+    <Compile Include="VC\POS_SL_P005.Consts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VC\POS_SL_P005.Code.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VC\POS_SL_M001.Events.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="VC\POS_SL_P005.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VC\POS_SL_P005.Designer.cs">
+      <DependentUpon>POS_SL_P005.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VC\POS_SL_P006.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VC\POS_SL_P006.Designer.cs">
+      <DependentUpon>POS_SL_P006.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VC\POS_SL_P007.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VC\POS_SL_P007.Designer.cs">
+      <DependentUpon>POS_SL_P007.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VC\POS_SL_P007.Consts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg_pay_sum.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bullet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg_pos_top_item_status.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\AutoRtnPanel.resx">
+      <DependentUpon>AutoRtnPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\AutoRtnTrxnInfo.txt" />
+    <EmbeddedResource Include="VC\POS_SL_P005.resx">
+      <DependentUpon>POS_SL_P005.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_list_up_P.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_list_dn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_list_dn_P.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_list_up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\AutoRtnTrxnInfo_Card.txt" />
+    <EmbeddedResource Include="VC\POS_SL_P006.resx">
+      <DependentUpon>POS_SL_P006.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VC\POS_SL_P007.resx">
+      <DependentUpon>POS_SL_P007.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_list_up.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0B66693B-90C0-4A89-BFA8-4C739C7229E8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WSWD.WmallPos.POS.IQ</RootNamespace>
+    <AssemblyName>WSWD.WmallPos.POS.IQ</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\02.Deployment\POS\debug\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\02.Deployment\POS\release\bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\..\..\02.Deployment\POS\Debug\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="AxInterop.KSNET_DONGLELib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libraries\AxInterop.KSNET_DONGLELib.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.KSNET_DONGLELib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libraries\Interop.KSNET_DONGLELib.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite, Version=1.0.66.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\SQLite.NET\bin\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="PI\IIQP001presenter.cs" />
+    <Compile Include="PI\IIQP002presenter.cs" />
+    <Compile Include="PI\IIQP003presenter.cs" />
+    <Compile Include="PI\IIQP004presenter.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="PT\IQP001presenter.cs" />
+    <Compile Include="PT\IQP002presenter.cs" />
+    <Compile Include="PT\IQP003presenter.cs" />
+    <Compile Include="PT\IQP004presenter.cs" />
+    <Compile Include="VC\POS_IQ_P001.Const.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="VC\POS_IQ_P001.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="VC\POS_IQ_P001.Designer.cs">
+      <DependentUpon>POS_IQ_P001.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VC\POS_IQ_P002.Const.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="VC\POS_IQ_P002.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="VC\POS_IQ_P002.Designer.cs">
+      <DependentUpon>POS_IQ_P002.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VC\POS_IQ_P003.Const.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="VC\POS_IQ_P003.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="VC\POS_IQ_P003.Designer.cs">
+      <DependentUpon>POS_IQ_P003.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VC\POS_IQ_P004.Const.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="VC\POS_IQ_P004.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="VC\POS_IQ_P004.Designer.cs">
+      <DependentUpon>POS_IQ_P004.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VI\IIQP001View.cs" />
+    <Compile Include="VI\IIQP002View.cs" />
+    <Compile Include="VI\IIQP003View.cs" />
+    <Compile Include="VI\IIQP004View.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WSWD.WmallPos.POS.BO\WSWD.WmallPos.POS.BO.csproj">
+      <Project>{4133015C-B096-491D-9263-6B226D64823A}</Project>
+      <Name>WSWD.WmallPos.POS.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WSWD.WmallPos.POS.FX.NetComm\WSWD.WmallPos.POS.FX.NetComm.csproj">
+      <Project>{193A326C-1CBD-47D9-9CF1-0DB9EAF05596}</Project>
+      <Name>WSWD.WmallPos.POS.FX.NetComm</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WSWD.WmallPos.POS.FX.Shared\WSWD.WmallPos.POS.FX.Shared.csproj">
+      <Project>{ECD30E8B-C2DC-406F-957E-DB73D9915229}</Project>
+      <Name>WSWD.WmallPos.POS.FX.Shared</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WSWD.WmallPos.POS.FX.Win\WSWD.WmallPos.POS.FX.Win.csproj">
+      <Project>{55373461-D376-4EF1-BB92-50BAFA759FB3}</Project>
+      <Name>WSWD.WmallPos.POS.FX.Win</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WSWD.WmallPos.POS.PY\WSWD.WmallPos.POS.PY.csproj">
+      <Project>{629C9B7C-B604-46B2-9BCD-14178FEACB07}</Project>
+      <Name>WSWD.WmallPos.POS.PY</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VC\POS_IQ_P001.resx">
+      <DependentUpon>POS_IQ_P001.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VC\POS_IQ_P002.resx">
+      <DependentUpon>POS_IQ_P002.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VC\POS_IQ_P003.resx">
+      <DependentUpon>POS_IQ_P003.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VC\POS_IQ_P004.resx">
+      <DependentUpon>POS_IQ_P004.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wmall_left.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_list_up_P.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_list_up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_list_dn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_list_dn_P.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wmall_left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\w_mall_left2.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

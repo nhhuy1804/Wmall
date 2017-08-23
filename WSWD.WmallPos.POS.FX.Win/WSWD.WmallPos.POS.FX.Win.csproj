@@ -1,0 +1,711 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{55373461-D376-4EF1-BB92-50BAFA759FB3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WSWD.WmallPos.POS.FX.Win</RootNamespace>
+    <AssemblyName>WSWD.WmallPos.POS.FX.Win</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\02.Deployment\POS\Debug\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\02.Deployment\POS\Release\bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\..\..\02.Deployment\POS\Debug\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxInterop.KeyBoardHook, Version=7.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libraries\AxInterop.KeyBoardHook.dll</HintPath>
+    </Reference>
+    <Reference Include="AxInterop.KSNET_DONGLELib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libraries\AxInterop.KSNET_DONGLELib.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.KeyBoardHook, Version=7.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libraries\Interop.KeyBoardHook.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.KSNET_DONGLELib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libraries\Interop.KSNET_DONGLELib.dll</HintPath>
+    </Reference>
+    <Reference Include="POS.Devices.OPOSCashDrawer, Version=1.14.0.0, Culture=neutral, PublicKeyToken=25db91e28cd23c98, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libraries\OposForDotNetAssemblies-1_14_001\Bin\POS.Devices.OPOSCashDrawer.dll</HintPath>
+    </Reference>
+    <Reference Include="POS.Devices.OPOSLineDisplay, Version=1.14.0.0, Culture=neutral, PublicKeyToken=25db91e28cd23c98, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libraries\OposForDotNetAssemblies-1_14_001\Bin\POS.Devices.OPOSLineDisplay.dll</HintPath>
+    </Reference>
+    <Reference Include="POS.Devices.OPOSMSR, Version=1.14.0.0, Culture=neutral, PublicKeyToken=25db91e28cd23c98, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libraries\OposForDotNetAssemblies-1_14_001\Bin\POS.Devices.OPOSMSR.dll</HintPath>
+    </Reference>
+    <Reference Include="POS.Devices.OPOSPOSPrinter, Version=1.14.0.0, Culture=neutral, PublicKeyToken=25db91e28cd23c98, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libraries\OposForDotNetAssemblies-1_14_001\Bin\POS.Devices.OPOSPOSPrinter.dll</HintPath>
+    </Reference>
+    <Reference Include="POS.Devices.Opos_Constants, Version=1.14.0.0, Culture=neutral, PublicKeyToken=25db91e28cd23c98, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libraries\OposForDotNetAssemblies-1_14_001\Bin\POS.Devices.Opos_Constants.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controls\ControlExtensions.cs" />
+    <Compile Include="Controls\LabelInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\LabelInfo.Designer.cs">
+      <DependentUpon>LabelInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ColorProgressBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ColorProgressBar.designer.cs">
+      <DependentUpon>ColorProgressBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ImageButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\BorderPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\BorderUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\BorderUserControl.Designer.cs">
+      <DependentUpon>BorderUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\RoundedButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\RoundedButtonStateStyle.cs" />
+    <Compile Include="Controls\RoundedLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\PrintLabelInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\PrintLabelInfo.Designer.cs">
+      <DependentUpon>PrintLabelInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data\MainMenuPresenter.cs" />
+    <Compile Include="Data\PostMessageHandler.cs" />
+    <Compile Include="Devices\POSDeviceManager.cs" />
+    <Compile Include="Devices\POSScannerGun.cs" />
+    <Compile Include="Devices\POSCashDrawer.cs" />
+    <Compile Include="Devices\POSDeviceBase.cs" />
+    <Compile Include="Devices\POSLineDisplay.cs" />
+    <Compile Include="Devices\POSMsr.cs" />
+    <Compile Include="Devices\POSPrinter.cs" />
+    <Compile Include="Devices\POSSignPad.cs" />
+    <Compile Include="Devices\SignPadCardInfo.cs" />
+    <Compile Include="Forms\FrameBase.Code.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MainFormBase.Code.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MainFormBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MainFormBase.Designer.cs">
+      <DependentUpon>MainFormBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MainFormExtensions.cs" />
+    <Compile Include="Forms\ProgressFormManager.cs" />
+    <Compile Include="Forms\MessageDialog.Code.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\KeyInputForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\KeyInputForm.Designer.cs">
+      <DependentUpon>KeyInputForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PopupBase03.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PopupBase03.Designer.cs">
+      <DependentUpon>PopupBase03.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\IMainMenuPresenter.cs" />
+    <Compile Include="Interfaces\IMainMenuView.cs" />
+    <Compile Include="Interfaces\IMenuClickValidator.cs" />
+    <Compile Include="Interfaces\IPostMessage.cs" />
+    <Compile Include="UserControls\BaseUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\BaseUserControl.Designer.cs">
+      <DependentUpon>BaseUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CommStatusLabel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\IconLabel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\GridCell.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\GridPanelDesigner.cs" />
+    <Compile Include="UserControls\GridHeader.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\GridPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\GridRow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\MainMenuV2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\MainMenuV2.Designer.cs">
+      <DependentUpon>MainMenuV2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\MenuButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControls\OpenStatusItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\OpenStatusItem.Designer.cs">
+      <DependentUpon>OpenStatusItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\SaleGridCell.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\SaleGridCell.Designer.cs">
+      <DependentUpon>SaleGridCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\SaleGridPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\SaleGridRow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\SaleGridRow.Designer.cs">
+      <DependentUpon>SaleGridRow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ScrollablePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ScrollablePanelDesigner.cs" />
+    <Compile Include="UserControls\SectionLabel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\TopBarV2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\TopBarV2.Designer.cs">
+      <DependentUpon>TopBarV2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\POSCommon.cs" />
+    <Compile Include="Interfaces\IFocusableControl.cs" />
+    <Compile Include="Interfaces\IKeyInputView.cs" />
+    <Compile Include="Interfaces\IMainFormView.cs" />
+    <Compile Include="Interfaces\IFrameBasePresenter.cs" />
+    <Compile Include="Interfaces\ITopBarDataView.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\FuncButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControls\InputControlType.cs" />
+    <Compile Include="UserControls\InputText.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControls\KeyPad.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\KeyPad.Designer.cs">
+      <DependentUpon>KeyPad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\KeyPadBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\KeyPadBase.Designer.cs">
+      <DependentUpon>KeyPadBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\MessageBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControls\MessageBarType.cs" />
+    <Compile Include="UserControls\SaleKeyPad.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\SaleKeyPad.Designer.cs">
+      <DependentUpon>SaleKeyPad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\StatusBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\StatusBar.Designer.cs">
+      <DependentUpon>StatusBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\InputControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\InputControl.Designer.cs">
+      <DependentUpon>InputControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\InputLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControls\TopBarItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\TopBarItem.Designer.cs">
+      <DependentUpon>TopBarItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PopupBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PopupBase.Designer.cs">
+      <DependentUpon>PopupBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PopupBase01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PopupBase01.Designer.cs">
+      <DependentUpon>PopupBase01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\InputDialogBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\InputDialogBase.Designer.cs">
+      <DependentUpon>InputDialogBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\FormBase.Designer.cs">
+      <DependentUpon>FormBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrameBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrameBase.Designer.cs">
+      <DependentUpon>FrameBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MessageDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MessageDialog.Designer.cs">
+      <DependentUpon>MessageDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PopupBase02.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PopupBase02.Designer.cs">
+      <DependentUpon>PopupBase02.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ProgressForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ProgressForm.Designer.cs">
+      <DependentUpon>ProgressForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\IBasePresenter.cs" />
+    <Compile Include="Interfaces\IBaseView.cs" />
+    <Compile Include="Interfaces\IChildFormManager.cs" />
+    <Compile Include="Interfaces\IChildFormView.cs" />
+    <Compile Include="UserControls\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControls\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WinExtensions.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\LabelInfo.resx">
+      <DependentUpon>LabelInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CLabel.resx">
+      <DependentUpon>CLabel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ColorProgressBar.resx">
+      <DependentUpon>ColorProgressBar.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PrintLabelInfo.resx">
+      <DependentUpon>PrintLabelInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\KeyInputForm.resx">
+      <DependentUpon>KeyInputForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MainFormBase.resx">
+      <DependentUpon>MainFormBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PopupBase03.resx">
+      <DependentUpon>PopupBase03.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\CommStatusLabel.resx">
+      <DependentUpon>CommStatusLabel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\IconLabel.resx">
+      <DependentUpon>IconLabel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\GridPanel.resx">
+      <DependentUpon>GridPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\InputText.resx">
+      <DependentUpon>InputText.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\KeyPad.resx">
+      <DependentUpon>KeyPad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\MainMenuV2.resx">
+      <DependentUpon>MainMenuV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\OpenStatusItem.resx">
+      <DependentUpon>OpenStatusItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\SaleGridCell.resx">
+      <DependentUpon>SaleGridCell.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\SaleGridPanel.resx">
+      <DependentUpon>SaleGridPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\SaleGridRow.resx">
+      <DependentUpon>SaleGridRow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\SaleKeyPad.resx">
+      <DependentUpon>SaleKeyPad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ScrollablePanel.resx">
+      <DependentUpon>ScrollablePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\StatusBar.resx">
+      <DependentUpon>StatusBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\InputControl.resx">
+      <DependentUpon>InputControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\TopBarItem.resx">
+      <DependentUpon>TopBarItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PopupBase.resx">
+      <DependentUpon>PopupBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PopupBase01.resx">
+      <DependentUpon>PopupBase01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InputDialogBase.resx">
+      <DependentUpon>InputDialogBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormBase.resx">
+      <DependentUpon>FormBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrameBase.resx">
+      <DependentUpon>FrameBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MessageDialog.resx">
+      <DependentUpon>MessageDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PopupBase02.resx">
+      <DependentUpon>PopupBase02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProgressForm.resx">
+      <DependentUpon>ProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\TopBarV2.resx">
+      <DependentUpon>TopBarV2.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Settings.settings">
+      <Generator>PublicSettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WSWD.WmallPos.POS.FX.Shared\WSWD.WmallPos.POS.FX.Shared.csproj">
+      <Project>{ECD30E8B-C2DC-406F-957E-DB73D9915229}</Project>
+      <Name>WSWD.WmallPos.POS.FX.Shared</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_loading.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check_box_OFF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check_box_ON.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_cal_dn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_cal_dn_P.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_cal_up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_cal_up_P.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_cal_back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg_sub.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_cal_21_DN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_cal_01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_cal_01_DN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_cal_02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_cal_02_DN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_cal_03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_cal_03_DN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_cal_04.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_cal_04_DN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_cal_05.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_cal_05_DN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_cal_06.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_cal_06_DN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_cal_07.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_cal_07_DN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_cal_08.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_cal_08_DN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_cal_09.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_cal_09_DN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_cal_10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_cal_10_DN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_cal_11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_cal_11_DN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_cal_12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_cal_12_DN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_cal_13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_cal_13_DN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_cal_14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_cal_14_DN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_cal_15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_cal_15_DN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_cal_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_cal_16_DN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_cal_17.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_cal_17_DN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_cal_18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_cal_18_DN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_cal_19.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_cal_19_DN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_cal_20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_cal_20_DN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_cal_21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loading.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_error.png" />
+    <None Include="Resources\ico_ok.png" />
+    <None Include="Resources\ico_list_dn.png" />
+    <None Include="Resources\ico_list_dn_P.png" />
+    <None Include="Resources\ico_list_up.png" />
+    <None Include="Resources\ico_list_up_P.png" />
+    <None Include="Resources\bg_03.png" />
+    <None Include="Resources\bullet.png" />
+    <None Include="Resources\notice_state_new.png" />
+    <None Include="Resources\notice_state_norm.png" />
+    <None Include="Resources\server_state_disc.png" />
+    <None Include="Resources\server_state_conn.png" />
+    <None Include="Resources\framebase.png" />
+    <None Include="Resources\TopBar.png" />
+    <None Include="Resources\msgdialog_bg.png" />
+    <None Include="Resources\messagedialog_error.png" />
+    <None Include="Resources\messagedialog_information.png" />
+    <None Include="Resources\messagedialog_question.png" />
+    <None Include="Resources\messagedialog_warning.png" />
+    <None Include="Resources\framebase_refund.png" />
+    <None Include="Resources\btn_main_01.png" />
+    <None Include="Resources\btn_main_01_da.png" />
+    <None Include="Resources\btn_main_01_dn.png" />
+    <None Include="Resources\btn_main_02.png" />
+    <None Include="Resources\btn_main_02_da.png" />
+    <None Include="Resources\btn_main_02_dn.png" />
+    <None Include="Resources\bg_02_f.jpg" />
+    <None Include="Resources\bg_03.jpg" />
+    <None Include="Resources\wmall_logo.jpg" />
+    <None Include="Resources\btn_cal_20.jpg" />
+    <None Include="Resources\messagedialog_error.jpg" />
+    <Content Include="Resources\wmall_logo.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

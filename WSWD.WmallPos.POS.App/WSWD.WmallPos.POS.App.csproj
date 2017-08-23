@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{85F70FD1-9507-4AC6-95F9-A84CCA3CD29C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WSWD.WmallPos.POS.App</RootNamespace>
+    <AssemblyName>WmallPOS</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>launcher_32.ico</ApplicationIcon>
+    <ManifestCertificateThumbprint>B1AD7F2506E6D9459F4F4CAE79D1AC7F1D19FD40</ManifestCertificateThumbprint>
+    <ManifestKeyFile>WSWD.WmallPos.POS.App_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <TargetZone>LocalIntranet</TargetZone>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+    <SignManifests>true</SignManifests>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.1</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\02.Deployment\POS\Debug\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\02.Deployment\POS\Release\bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\..\..\02.Deployment\POS\Debug\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxInterop.KeyBoardHook, Version=7.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libraries\AxInterop.KeyBoardHook.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.KeyBoardHook, Version=7.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libraries\Interop.KeyBoardHook.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.SQLite, Version=1.0.105.2, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\SQLite.NET\bin\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationClient">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WSWD.WmallPos.POS.TableLayout, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\02.Deployment\POS\debug\bin\WSWD.WmallPos.POS.TableLayout.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainForm.TimerTask.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PI\IMainFormPresenter.cs" />
+    <Compile Include="PT\MainFormPresenter.cs" />
+    <Compile Include="MainForm.Code.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="VI\IMainView.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg_main.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg_login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg_sub.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="launcher_32.ico" />
+    <Content Include="lib\damo\cis_cc-3.2.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\damo\cis_ce-3.2.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\damo\logw-0.2.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\damo\scpdb_agent.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\damo\scpdb_agent.ini">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\ocx\KeyboardHook.ocx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\ocx\KSNet_ADSL.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\ocx\KSNet_Dongle.inf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\ocx\KSNet_Dongle.ocx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\damo\scpdb_agent.lib">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\damo\Export_key.SCPS">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\damo\scpdb_license.CER">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\damo\scpdb_license.KEY">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UpgradeDongleOCX.txt" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Resources\btn_main_02_DA.png" />
+    <None Include="Resources\btn_main_02.png" />
+    <None Include="Resources\btn_main_01_DN.png" />
+    <None Include="Resources\btn_main_01_DA.png" />
+    <None Include="Resources\btn_main_01.png" />
+    <None Include="Resources\btn_main_02_DN.png" />
+    <None Include="Resources\bg_03.png" />
+    <None Include="Resources\bg_04.png" />
+    <None Include="WSWD.WmallPos.POS.App_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Service\WSWD.WmallPos.Service.Shared\WSWD.WmallPos.Service.Shared.csproj">
+      <Project>{8E859238-4A4C-4706-A11A-AB08DA429EC7}</Project>
+      <Name>WSWD.WmallPos.Service.Shared</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WSWD.WmallPos.POS.BO\WSWD.WmallPos.POS.BO.csproj">
+      <Project>{4133015C-B096-491D-9263-6B226D64823A}</Project>
+      <Name>WSWD.WmallPos.POS.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WSWD.WmallPos.POS.ED\WSWD.WmallPos.POS.ED.csproj">
+      <Project>{A75DBB05-25AE-46E7-9F85-04D7A861AEDE}</Project>
+      <Name>WSWD.WmallPos.POS.ED</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WSWD.WmallPos.POS.FX.NetComm\WSWD.WmallPos.POS.FX.NetComm.csproj">
+      <Project>{193A326C-1CBD-47D9-9CF1-0DB9EAF05596}</Project>
+      <Name>WSWD.WmallPos.POS.FX.NetComm</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WSWD.WmallPos.POS.FX.Shared\WSWD.WmallPos.POS.FX.Shared.csproj">
+      <Project>{ECD30E8B-C2DC-406F-957E-DB73D9915229}</Project>
+      <Name>WSWD.WmallPos.POS.FX.Shared</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WSWD.WmallPos.POS.FX.Tasks\WSWD.WmallPos.POS.FX.Tasks.csproj">
+      <Project>{1F130FC3-EF16-4B88-A8D9-88787363C71B}</Project>
+      <Name>WSWD.WmallPos.POS.FX.Tasks</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WSWD.WmallPos.POS.FX.Win\WSWD.WmallPos.POS.FX.Win.csproj">
+      <Project>{55373461-D376-4EF1-BB92-50BAFA759FB3}</Project>
+      <Name>WSWD.WmallPos.POS.FX.Win</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WSWD.WmallPos.POS.IO\WSWD.WmallPos.POS.IO.csproj">
+      <Project>{6328ACBA-8FA7-451B-9ED2-A0CCA1F50D8B}</Project>
+      <Name>WSWD.WmallPos.POS.IO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WSWD.WmallPos.POS.IQ\WSWD.WmallPos.POS.IQ.csproj">
+      <Project>{0B66693B-90C0-4A89-BFA8-4C739C7229E8}</Project>
+      <Name>WSWD.WmallPos.POS.IQ</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WSWD.WmallPos.POS.PT\WSWD.WmallPos.POS.PT.csproj">
+      <Project>{277DDCF4-A7E0-45AF-8942-BA2CA0F819B3}</Project>
+      <Name>WSWD.WmallPos.POS.PT</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WSWD.WmallPos.POS.PY\WSWD.WmallPos.POS.PY.csproj">
+      <Project>{629C9B7C-B604-46B2-9BCD-14178FEACB07}</Project>
+      <Name>WSWD.WmallPos.POS.PY</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WSWD.WmallPos.POS.SD\WSWD.WmallPos.POS.SD.csproj">
+      <Project>{F7F334C1-1DCE-4EAD-AA92-560CACB74EF5}</Project>
+      <Name>WSWD.WmallPos.POS.SD</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WSWD.WmallPos.POS.SL\WSWD.WmallPos.POS.SL.csproj">
+      <Project>{E788AA91-9C0D-420F-A181-DF001DA4ED57}</Project>
+      <Name>WSWD.WmallPos.POS.SL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WSWD.WmallPos.POS.SO\WSWD.WmallPos.POS.SO.csproj">
+      <Project>{D8E8C326-5D6E-4CC4-94B0-F930F73B7620}</Project>
+      <Name>WSWD.WmallPos.POS.SO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WSWD.WmallPos.POS.ST\WSWD.WmallPos.POS.ST.csproj">
+      <Project>{7254C1E8-41B6-40A8-89BF-C875BD6D1ED6}</Project>
+      <Name>WSWD.WmallPos.POS.ST</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WSWD.WmallPos.POS.SY\WSWD.WmallPos.POS.SY.csproj">
+      <Project>{FF21EDEF-7E63-4B3A-8356-6BE78557A397}</Project>
+      <Name>WSWD.WmallPos.POS.SY</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0%28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0%28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="VC\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

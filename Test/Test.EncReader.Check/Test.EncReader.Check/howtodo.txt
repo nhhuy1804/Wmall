@@ -1,0 +1,8 @@
+﻿1. If old version, just run by admin, un_reg_ocx then reg_ocx
+2. Restart pc;
+3. Rebuild solution
+
+4. These 2 files are updated in libraries
+
+D:\Working\01.Projects\Wmall\02.Source\wspos_wmall\01.Source\POS\Test\Test.EncReader.Check\Test.EncReader.Check\Test.EncReader.Check\obj\x86\Debug\AxInterop.KSNET_DONGLELib.dll
+D:\Working\01.Projects\Wmall\02.Source\wspos_wmall\01.Source\POS\Test\Test.EncReader.Check\Test.EncReader.Check\Test.EncReader.Check\obj\x86\Debug\Interop.KSNET_DONGLELib.dll

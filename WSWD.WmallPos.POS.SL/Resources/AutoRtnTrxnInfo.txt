@@ -1,0 +1,11 @@
+﻿영업일자     : #SALE_DATE
+POS 번호    : #POS_NO
+거래번호     : #TRXN_NO
+거래종별     : #TRXN_TYPE
+거래일자     : #DATE_FULL
+#CARD_PAY_LIST
+회원코드     : #MEM_NO
+회원명        : #MEM_NAME
+적립포인트  : #POINT
+현금영수증  : #CASH_RCP
+사은품지급  : #THKS_FG

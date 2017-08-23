@@ -1,0 +1,752 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{ECD30E8B-C2DC-406F-957E-DB73D9915229}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WSWD.WmallPos.POS.FX.Shared</RootNamespace>
+    <AssemblyName>WSWD.WmallPos.POS.FX.Shared</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\02.Deployment\POS\Debug\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\02.Deployment\POS\Release\bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\..\..\02.Deployment\POS\Debug\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.SQLite, Version=1.0.105.2, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\SQLite.NET\bin\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\Config\AppConfig.cs">
+      <Link>Config\AppConfig.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\Config\ConfigReader.cs">
+      <Link>Config\ConfigReader.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\Config\DevConfig.cs">
+      <Link>Config\DevConfig.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\Config\IniConfig.cs">
+      <Link>Config\IniConfig.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\Config\KeyMapConfig.cs">
+      <Link>Config\KeyMapConfig.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\Config\SysMessage.cs">
+      <Link>Config\SysMessage.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\Data\CashDrawer.cs">
+      <Link>Data\CashDrawer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\Data\FrameBaseData.cs">
+      <Link>Data\FrameBaseData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\Data\FrameBaseDataChangedEventArgs.cs">
+      <Link>Data\FrameBaseDataChangedEventArgs.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\Data\IFrameBaseData.cs">
+      <Link>Data\IFrameBaseData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\Data\IObserver.cs">
+      <Link>Data\IObserver.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\Data\KeyMap.cs">
+      <Link>Data\KeyMap.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\Data\LineDisplay.cs">
+      <Link>Data\LineDisplay.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\Data\MSR.cs">
+      <Link>Data\MSR.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\Data\PosComm.cs">
+      <Link>Data\PosComm.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\Data\PosFTP.cs">
+      <Link>Data\PosFTP.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\Data\PosInfo.cs">
+      <Link>Data\PosInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\Data\PosInfoDat.cs">
+      <Link>Data\PosInfoDat.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\Data\PosLogo.cs">
+      <Link>Data\PosLogo.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\Data\PosOption.cs">
+      <Link>Data\PosOption.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\Data\PosPrinter.cs">
+      <Link>Data\PosPrinter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\Data\PosVan.cs">
+      <Link>Data\PosVan.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\Data\ScannerGun.cs">
+      <Link>Data\ScannerGun.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\Data\SignPad.cs">
+      <Link>Data\SignPad.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\DB\MasterDbHelper.cs">
+      <Link>DB\MasterDbHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\DB\TranDbHelper.cs">
+      <Link>DB\TranDbHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\Enums.cs">
+      <Link>Enums.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\Exceptions\ExceptionHandler.cs">
+      <Link>Exceptions\ExceptionHandler.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\Exceptions\POSException.cs">
+      <Link>Exceptions\POSException.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\Exceptions\ProgramNotFoundException.cs">
+      <Link>Exceptions\ProgramNotFoundException.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\Extensions.cs">
+      <Link>Extensions.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\Helper\SQLiteDacBase.cs">
+      <Link>Helper\SQLiteDacBase.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\Helper\SQLiteDacHelper.cs">
+      <Link>Helper\SQLiteDacHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\Helper\TraceHelper.cs">
+      <Link>Helper\TraceHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\Listeners\BaseTraceListener.cs">
+      <Link>Listeners\BaseTraceListener.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\Listeners\LogFileTraceListener.cs">
+      <Link>Listeners\LogFileTraceListener.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\Listeners\TextBoxTraceListener.cs">
+      <Link>Listeners\TextBoxTraceListener.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Basket\BasketAccount.cs">
+      <Link>NetComm\Basket\BasketAccount.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Basket\BasketBase.cs">
+      <Link>NetComm\Basket\BasketBase.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Basket\BasketCashIC.cs">
+      <Link>NetComm\Basket\BasketCashIC.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Basket\BasketCashRecpt.cs">
+      <Link>NetComm\Basket\BasketCashRecpt.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Basket\BasketCoupon.cs">
+      <Link>NetComm\Basket\BasketCoupon.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Basket\BasketEnd.cs">
+      <Link>NetComm\Basket\BasketEnd.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Basket\BasketExchange.cs">
+      <Link>NetComm\Basket\BasketExchange.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Basket\BasketHeader.cs">
+      <Link>NetComm\Basket\BasketHeader.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Basket\BasketItem.cs">
+      <Link>NetComm\Basket\BasketItem.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Basket\BasketMiddleDeposit.cs">
+      <Link>NetComm\Basket\BasketMiddleDeposit.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Basket\BasketOldExGift.cs">
+      <Link>NetComm\Basket\BasketOldExGift.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Basket\BasketOtherTicket.cs">
+      <Link>NetComm\Basket\BasketOtherTicket.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Basket\BasketPay.cs">
+      <Link>NetComm\Basket\BasketPay.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Basket\BasketPayCard.cs">
+      <Link>NetComm\Basket\BasketPayCard.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Basket\BasketPayCash.cs">
+      <Link>NetComm\Basket\BasketPayCash.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Basket\BasketPoint.cs">
+      <Link>NetComm\Basket\BasketPoint.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Basket\BasketPointSave.cs">
+      <Link>NetComm\Basket\BasketPointSave.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Basket\BasketProd.cs">
+      <Link>NetComm\Basket\BasketProd.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Basket\BasketReserve.cs">
+      <Link>NetComm\Basket\BasketReserve.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Basket\BasketSubTotal.cs">
+      <Link>NetComm\Basket\BasketSubTotal.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Basket\BasketTksPresentRtn.cs">
+      <Link>NetComm\Basket\BasketTksPresentRtn.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Basket\BasketTrans.cs">
+      <Link>NetComm\Basket\BasketTrans.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Basket\RtnPrsGiftData.cs">
+      <Link>NetComm\Basket\RtnPrsGiftData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\DataExtensions.cs">
+      <Link>NetComm\DataExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\NetCommEnums.cs">
+      <Link>NetComm\NetCommEnums.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Request\PD\PD01ReqData.cs">
+      <Link>NetComm\Request\PD\PD01ReqData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Request\PD\PD02ReqData.cs">
+      <Link>NetComm\Request\PD\PD02ReqData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Request\PD\PD03ReqData.cs">
+      <Link>NetComm\Request\PD\PD03ReqData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Request\PD\PD04ReqData.cs">
+      <Link>NetComm\Request\PD\PD04ReqData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Request\PD\PD05ReqData.cs">
+      <Link>NetComm\Request\PD\PD05ReqData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Request\PD\PD06ReqData.cs">
+      <Link>NetComm\Request\PD\PD06ReqData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Request\PD\PD07ReqData.cs">
+      <Link>NetComm\Request\PD\PD07ReqData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Request\PD\PD08ReqData.cs">
+      <Link>NetComm\Request\PD\PD08ReqData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Request\PD\PD09ReaData.cs">
+      <Link>NetComm\Request\PD\PD09ReaData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Request\PD\PD09ReqData.cs">
+      <Link>NetComm\Request\PD\PD09ReqData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Request\PD\PD10ReqData.cs">
+      <Link>NetComm\Request\PD\PD10ReqData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Request\PD\PD11ReqData.cs">
+      <Link>NetComm\Request\PD\PD11ReqData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Request\PD\PD12ReqData.cs">
+      <Link>NetComm\Request\PD\PD12ReqData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Request\PD\PD13ReqData.cs">
+      <Link>NetComm\Request\PD\PD13ReqData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Request\PD\PD14ReqData.cs">
+      <Link>NetComm\Request\PD\PD14ReqData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Request\PD\PD15ReqData.cs">
+      <Link>NetComm\Request\PD\PD15ReqData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Request\PD\PD16ReqData.cs">
+      <Link>NetComm\Request\PD\PD16ReqData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Request\PD\PD17ReqData.cs">
+      <Link>NetComm\Request\PD\PD17ReqData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Request\PD\PD18ReqData.cs">
+      <Link>NetComm\Request\PD\PD18ReqData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Request\PD\PD19ReqData.cs">
+      <Link>NetComm\Request\PD\PD19ReqData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Request\PD\PD20ReqData.cs">
+      <Link>NetComm\Request\PD\PD20ReqData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Request\PD\PD21ReqData.cs">
+      <Link>NetComm\Request\PD\PD21ReqData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Request\PD\PD22ReqData.cs">
+      <Link>NetComm\Request\PD\PD22ReqData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Request\PD\PD23ReqData.cs">
+      <Link>NetComm\Request\PD\PD23ReqData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Request\PG\PG01ReqData.cs">
+      <Link>NetComm\Request\PG\PG01ReqData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Request\PG\PG02ReqData.cs">
+      <Link>NetComm\Request\PG\PG02ReqData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Request\PG\PG02ReqDataSub.cs">
+      <Link>NetComm\Request\PG\PG02ReqDataSub.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Request\PP\PP01ReqData.cs">
+      <Link>NetComm\Request\PP\PP01ReqData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Request\PP\PP02ReqData.cs">
+      <Link>NetComm\Request\PP\PP02ReqData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Request\PP\PP03ReqData.cs">
+      <Link>NetComm\Request\PP\PP03ReqData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Request\PP\PP04ReqData.cs">
+      <Link>NetComm\Request\PP\PP04ReqData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Request\PQ\PQ01ReqData.cs">
+      <Link>NetComm\Request\PQ\PQ01ReqData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Request\PQ\PQ02ReqData.cs">
+      <Link>NetComm\Request\PQ\PQ02ReqData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Request\PQ\PQ03ReqData.cs">
+      <Link>NetComm\Request\PQ\PQ03ReqData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Request\PQ\PQ04ReqData.cs">
+      <Link>NetComm\Request\PQ\PQ04ReqData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Request\PQ\PQ05ReqData.cs">
+      <Link>NetComm\Request\PQ\PQ05ReqData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Request\PQ\PQ06ReqData.cs">
+      <Link>NetComm\Request\PQ\PQ06ReqData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Request\PQ\PQ07ReqData.cs">
+      <Link>NetComm\Request\PQ\PQ07ReqData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Request\PQ\PQ08ReqData.cs">
+      <Link>NetComm\Request\PQ\PQ08ReqData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Request\PQ\PQ09ReqData.cs">
+      <Link>NetComm\Request\PQ\PQ09ReqData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Request\PQ\PQ10ReqData.cs">
+      <Link>NetComm\Request\PQ\PQ10ReqData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Request\PQ\PQ11ReqData.cs">
+      <Link>NetComm\Request\PQ\PQ11ReqData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Request\PQ\PQ12ReqData.cs">
+      <Link>NetComm\Request\PQ\PQ12ReqData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Request\PQ\PQ13ReqData.cs">
+      <Link>NetComm\Request\PQ\PQ13ReqData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Request\PU\PU01ReqData.cs">
+      <Link>NetComm\Request\PU\PU01ReqData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Request\PU\PU01ReqDataRecord.cs">
+      <Link>NetComm\Request\PU\PU01ReqDataRecord.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Request\PU\PU02ReqData.cs">
+      <Link>NetComm\Request\PU\PU02ReqData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Request\PU\PU03ReqData.cs">
+      <Link>NetComm\Request\PU\PU03ReqData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Request\PU\PU04ReqData.cs">
+      <Link>NetComm\Request\PU\PU04ReqData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Request\PU\PU05ReqData.cs">
+      <Link>NetComm\Request\PU\PU05ReqData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Request\PV\PV01ReqData.cs">
+      <Link>NetComm\Request\PV\PV01ReqData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Request\PV\PV02ReqData.cs">
+      <Link>NetComm\Request\PV\PV02ReqData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Request\PV\PV03ReqData.cs">
+      <Link>NetComm\Request\PV\PV03ReqData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Request\PV\PV04ReqData.cs">
+      <Link>NetComm\Request\PV\PV04ReqData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Request\PV\PV11ReqData.cs">
+      <Link>NetComm\Request\PV\PV11ReqData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Request\PV\PV11ReqDataAdd.cs">
+      <Link>NetComm\Request\PV\PV11ReqDataAdd.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Request\PV\PV12ReqData.cs">
+      <Link>NetComm\Request\PV\PV12ReqData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Request\PV\PV21ReqData.cs">
+      <Link>NetComm\Request\PV\PV21ReqData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Request\PV\PV21ReqDataAdd.cs">
+      <Link>NetComm\Request\PV\PV21ReqDataAdd.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Request\RequestBase.cs">
+      <Link>NetComm\Request\RequestBase.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Request\RequestData.cs">
+      <Link>NetComm\Request\RequestData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Request\RequestHeader.cs">
+      <Link>NetComm\Request\RequestHeader.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Request\ResponseBase.cs">
+      <Link>NetComm\Request\ResponseBase.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Response\PD\PD01RespData.cs">
+      <Link>NetComm\Response\PD\PD01RespData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Response\PD\PD02RespData.cs">
+      <Link>NetComm\Response\PD\PD02RespData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Response\PD\PD03RespData.cs">
+      <Link>NetComm\Response\PD\PD03RespData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Response\PD\PD04RespData.cs">
+      <Link>NetComm\Response\PD\PD04RespData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Response\PD\PD05RespData.cs">
+      <Link>NetComm\Response\PD\PD05RespData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Response\PD\PD06RespData.cs">
+      <Link>NetComm\Response\PD\PD06RespData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Response\PD\PD07RespData.cs">
+      <Link>NetComm\Response\PD\PD07RespData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Response\PD\PD08RespData.cs">
+      <Link>NetComm\Response\PD\PD08RespData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Response\PD\PD09RespData.cs">
+      <Link>NetComm\Response\PD\PD09RespData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Response\PD\PD10RespData.cs">
+      <Link>NetComm\Response\PD\PD10RespData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Response\PD\PD11RespData.cs">
+      <Link>NetComm\Response\PD\PD11RespData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Response\PD\PD12RespData.cs">
+      <Link>NetComm\Response\PD\PD12RespData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Response\PD\PD13RespData.cs">
+      <Link>NetComm\Response\PD\PD13RespData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Response\PD\PD14RespData.cs">
+      <Link>NetComm\Response\PD\PD14RespData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Response\PD\PD15RespData.cs">
+      <Link>NetComm\Response\PD\PD15RespData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Response\PD\PD16RespData.cs">
+      <Link>NetComm\Response\PD\PD16RespData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Response\PD\PD17RespData.cs">
+      <Link>NetComm\Response\PD\PD17RespData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Response\PD\PD18RespData.cs">
+      <Link>NetComm\Response\PD\PD18RespData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Response\PD\PD19RespData.cs">
+      <Link>NetComm\Response\PD\PD19RespData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Response\PD\PD20RespData.cs">
+      <Link>NetComm\Response\PD\PD20RespData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Response\PD\PD21RespData.cs">
+      <Link>NetComm\Response\PD\PD21RespData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Response\PD\PD22RespData.cs">
+      <Link>NetComm\Response\PD\PD22RespData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Response\PD\PD23RespData.cs">
+      <Link>NetComm\Response\PD\PD23RespData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Response\PG\PG01RespData.cs">
+      <Link>NetComm\Response\PG\PG01RespData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Response\PG\PG02RespData.cs">
+      <Link>NetComm\Response\PG\PG02RespData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Response\PG\PG02RespDataSub.cs">
+      <Link>NetComm\Response\PG\PG02RespDataSub.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Response\PP\PP01RespData.cs">
+      <Link>NetComm\Response\PP\PP01RespData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Response\PP\PP02RespData.cs">
+      <Link>NetComm\Response\PP\PP02RespData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Response\PP\PP02RespDataSub.cs">
+      <Link>NetComm\Response\PP\PP02RespDataSub.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Response\PP\PP03RespData.cs">
+      <Link>NetComm\Response\PP\PP03RespData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Response\PP\PP04RespData.cs">
+      <Link>NetComm\Response\PP\PP04RespData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Response\PQ\PQ01RespData.cs">
+      <Link>NetComm\Response\PQ\PQ01RespData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Response\PQ\PQ02RespData.cs">
+      <Link>NetComm\Response\PQ\PQ02RespData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Response\PQ\PQ03RespData.cs">
+      <Link>NetComm\Response\PQ\PQ03RespData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Response\PQ\PQ04RespData.cs">
+      <Link>NetComm\Response\PQ\PQ04RespData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Response\PQ\PQ05RespData.cs">
+      <Link>NetComm\Response\PQ\PQ05RespData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Response\PQ\PQ06RespData.cs">
+      <Link>NetComm\Response\PQ\PQ06RespData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Response\PQ\PQ07RespData.cs">
+      <Link>NetComm\Response\PQ\PQ07RespData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Response\PQ\PQ08RespData.cs">
+      <Link>NetComm\Response\PQ\PQ08RespData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Response\PQ\PQ09RespData.cs">
+      <Link>NetComm\Response\PQ\PQ09RespData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Response\PQ\PQ10RespData.cs">
+      <Link>NetComm\Response\PQ\PQ10RespData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Response\PQ\PQ11RespData.cs">
+      <Link>NetComm\Response\PQ\PQ11RespData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Response\PQ\PQ12RespData.cs">
+      <Link>NetComm\Response\PQ\PQ12RespData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Response\PQ\PQ13RespData.cs">
+      <Link>NetComm\Response\PQ\PQ13RespData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Response\PU\PU01RespData.cs">
+      <Link>NetComm\Response\PU\PU01RespData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Response\PU\PU04RespData.cs">
+      <Link>NetComm\Response\PU\PU04RespData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Response\PU\PU05RespData.cs">
+      <Link>NetComm\Response\PU\PU05RespData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Response\PV\PV01RespData.cs">
+      <Link>NetComm\Response\PV\PV01RespData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Response\PV\PV02RespData.cs">
+      <Link>NetComm\Response\PV\PV02RespData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Response\PV\PV03RespData.cs">
+      <Link>NetComm\Response\PV\PV03RespData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Response\PV\PV04RespData.cs">
+      <Link>NetComm\Response\PV\PV04RespData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Response\PV\PV21RespData.cs">
+      <Link>NetComm\Response\PV\PV21RespData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Response\TaskResponseData.cs">
+      <Link>NetComm\Response\TaskResponseData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\SerializeClassBase.cs">
+      <Link>NetComm\SerializeClassBase.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Types\BasketEnums.cs">
+      <Link>NetComm\Types\BasketEnums.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\NetComm\Types\TypeGubunAttribute.cs">
+      <Link>NetComm\Types\TypeGubunAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\Nini\Config\AliasText.cs">
+      <Link>Nini\Config\AliasText.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\Nini\Config\ArgvConfigSource.cs">
+      <Link>Nini\Config\ArgvConfigSource.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\Nini\Config\ConfigBase.cs">
+      <Link>Nini\Config\ConfigBase.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\Nini\Config\ConfigCollection.cs">
+      <Link>Nini\Config\ConfigCollection.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\Nini\Config\ConfigSourceBase.cs">
+      <Link>Nini\Config\ConfigSourceBase.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\Nini\Config\DotNetConfigSource.cs">
+      <Link>Nini\Config\DotNetConfigSource.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\Nini\Config\IConfig.cs">
+      <Link>Nini\Config\IConfig.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\Nini\Config\IConfigSource.cs">
+      <Link>Nini\Config\IConfigSource.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\Nini\Config\IniConfig.cs">
+      <Link>Nini\Config\IniConfig.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\Nini\Config\IniConfigSource.cs">
+      <Link>Nini\Config\IniConfigSource.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\Nini\Config\RegistryConfigSource.cs">
+      <Link>Nini\Config\RegistryConfigSource.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\Nini\Config\XmlConfigSource.cs">
+      <Link>Nini\Config\XmlConfigSource.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\Nini\Ini\IniDocument.cs">
+      <Link>Nini\Ini\IniDocument.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\Nini\Ini\IniException.cs">
+      <Link>Nini\Ini\IniException.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\Nini\Ini\IniItem.cs">
+      <Link>Nini\Ini\IniItem.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\Nini\Ini\IniReader.cs">
+      <Link>Nini\Ini\IniReader.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\Nini\Ini\IniSection.cs">
+      <Link>Nini\Ini\IniSection.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\Nini\Ini\IniSectionCollection.cs">
+      <Link>Nini\Ini\IniSectionCollection.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\Nini\Ini\IniWriter.cs">
+      <Link>Nini\Ini\IniWriter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\Nini\Util\ArgvParser.cs">
+      <Link>Nini\Util\ArgvParser.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\Nini\Util\OrderedList.cs">
+      <Link>Nini\Util\OrderedList.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\Nini\Util\OrderedListEnumerator.cs">
+      <Link>Nini\Util\OrderedListEnumerator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\Shared.cs">
+      <Link>Shared.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\Tasks\TimerTask.cs">
+      <Link>Tasks\TimerTask.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\Utils\DataUtils.cs">
+      <Link>Utils\DataUtils.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\Utils\DateTimeUtils.cs">
+      <Link>Utils\DateTimeUtils.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\Utils\FtpWebUtils.cs">
+      <Link>Utils\FtpWebUtils.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\Utils\IPrinterDevice.cs">
+      <Link>Utils\IPrinterDevice.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\Utils\LogUtils.cs">
+      <Link>Utils\LogUtils.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\Utils\PrinterUtils.cs">
+      <Link>Utils\PrinterUtils.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\Utils\TypeHelper.cs">
+      <Link>Utils\TypeHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Shared\WSWD.WmallPos.Shared\Writers\TextBoxStreamWriter.cs">
+      <Link>Writers\TextBoxStreamWriter.cs</Link>
+    </Compile>
+    <Compile Include="Data\KeyEvents.cs" />
+    <Compile Include="Data\MenuData.cs" />
+    <Compile Include="Exceptions\Config.cs" />
+    <Compile Include="Exceptions\POSExceptionHandler.cs" />
+    <Compile Include="Exceptions\HandlerBase.cs" />
+    <Compile Include="Exceptions\IExceptionPublisher.cs" />
+    <Compile Include="FileHandler\FtpFileInfo.cs" />
+    <Compile Include="NetComm\Response\PV\PV23ReqData.cs" />
+    <Compile Include="POSExtensions.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils\FileUtils.cs" />
+    <Compile Include="Utils\FTPUtils.cs" />
+    <Compile Include="Utils\NativeMethods.cs" />
+    <Compile Include="Utils\NetworkUtils.cs" />
+    <Compile Include="Utils\ClassHelper.cs" />
+    <Compile Include="Utils\POSDateTimeUtils.cs" />
+    <Compile Include="Utils\POSPrinterUtils.cs" />
+    <Compile Include="WinEnums.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

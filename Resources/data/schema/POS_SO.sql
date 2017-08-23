@@ -1,0 +1,11 @@
+﻿--- 로그인한다
+<ValidateCasNo>
+SELECT ID_USER, NM_USER, NO_EMP, NO_PASS, FG_USER, FG_USE FROM BSM031T 
+WHERE ID_USER = @ID_USER
+</ValidateCasNo>
+
+--- 관리자확인
+<ValidateAdminCas>
+SELECT ID_USER, NM_USER, NO_EMP, NO_PASS, FG_USER, FG_USE FROM BSM031T 
+WHERE ID_USER = @ID_USER
+</ValidateAdminCas>

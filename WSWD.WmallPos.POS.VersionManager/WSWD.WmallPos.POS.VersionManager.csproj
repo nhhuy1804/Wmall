@@ -1,0 +1,292 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C9DD2733-89B1-494B-ACE5-4B48B3C07A86}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WSWD.WmallPos.POS.VersionManager</RootNamespace>
+    <AssemblyName>VersionManager</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>launcher_32.ico</ApplicationIcon>
+    <StartupObject>
+    </StartupObject>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\02.Deployment\POS\Debug\util\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\02.Deployment\POS\Release\util\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.OracleClient">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Control\ctrlCCBoxItem.cs" />
+    <Compile Include="Control\ctrlCheckedComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\ctrlApp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\ctrlApp.Designer.cs">
+      <DependentUpon>ctrlApp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\ctrlDev.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\ctrlDev.Designer.cs">
+      <DependentUpon>ctrlDev.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\ctrlFile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\ctrlFile.Designer.cs">
+      <DependentUpon>ctrlFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\ctrlMst.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\ctrlMst.Designer.cs">
+      <DependentUpon>ctrlMst.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\ctrlProgress.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\ctrlProgress.Designer.cs">
+      <DependentUpon>ctrlProgress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\ctrlStatus.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\ctrlStatus.Designer.cs">
+      <DependentUpon>ctrlStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\ctrlTran.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\ctrlTran.Designer.cs">
+      <DependentUpon>ctrlTran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\ctrlTree.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\ctrlTree.Designer.cs">
+      <DependentUpon>ctrlTree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNewDate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNewDate.Designer.cs">
+      <DependentUpon>frmNewDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPopUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPopUp.Designer.cs">
+      <DependentUpon>frmPopUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPosList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPosList.Designer.cs">
+      <DependentUpon>frmPosList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NativeMethods.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Control\ctrlApp.resx">
+      <DependentUpon>ctrlApp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\ctrlDev.resx">
+      <DependentUpon>ctrlDev.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\ctrlFile.resx">
+      <DependentUpon>ctrlFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\ctrlMst.resx">
+      <DependentUpon>ctrlMst.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\ctrlProgress.resx">
+      <DependentUpon>ctrlProgress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\ctrlStatus.resx">
+      <DependentUpon>ctrlStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\ctrlTran.resx">
+      <DependentUpon>ctrlTran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\ctrlTree.resx">
+      <DependentUpon>ctrlTree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNewDate.resx">
+      <DependentUpon>frmNewDate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPopUp.resx">
+      <DependentUpon>frmPopUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPosList.resx">
+      <DependentUpon>frmPosList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Utils\clsUtilsData.cs" />
+    <Compile Include="Utils\clsUtilsOra.cs" />
+    <Compile Include="Utils\clsUtilsSTRING.cs" />
+    <Compile Include="Utils\clsUtilsEnum.cs" />
+    <Compile Include="Utils\clsUtilsFTP.cs" />
+    <Compile Include="Utils\clsUtilsINI.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="launcher_32.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="msvcr71.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="oci.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ociw32.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="oraociei11.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="OraOps11w.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\version.xml" />
+    <Content Include="XML\setup.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="XML\version.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0%28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0%28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Images\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
